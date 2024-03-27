@@ -17,12 +17,11 @@ class BerandaScreen extends StatelessWidget {
               child: Column(
                 children: [
                   searchBar(),
-                  // gopayCardBanner(),
-                  goClubBanner(),
+                  UnivBanner(),
                   promoBanner(),
                   promoMerdeka(),
-                  promoGoFood(),
-                  promoGoClub(),
+                  promoUniv(),
+                  promoUnivrab(),
                   SizedBox(
                     height: 150,
                   )
@@ -30,64 +29,12 @@ class BerandaScreen extends StatelessWidget {
               ),
             ),
           ),
-          // Align(
-          //   alignment: Alignment.bottomCenter,
-          //   child: Container(
-          //     height: 95,
-          //     width: double.infinity,
-          //     margin: EdgeInsets.only(
-          //       left: 15,
-          //       right: 15,
-          //       bottom: 25,
-          //     ),
-          //     padding: EdgeInsets.only(
-          //       left: 15,
-          //       right: 15,
-          //     ),
-          //     decoration: BoxDecoration(
-          //       color: Colors.white,
-          //       borderRadius: BorderRadius.circular(50),
-          //       boxShadow: [
-          //         BoxShadow(
-          //           offset: Offset(0, 8),
-          //           blurRadius: 15,
-          //           color: Colors.black26,
-          //         )
-          //       ],
-          //     ),
-          //     child: Column(
-          //       mainAxisAlignment: MainAxisAlignment.center,
-          //       children: [
-          //         Container(
-          //           height: 4,
-          //           width: 35,
-          //           decoration: BoxDecoration(
-          //             color: Colors.black26,
-          //             borderRadius: BorderRadius.circular(50),
-          //           ),
-          //         ),
-          //         SizedBox(
-          //           height: 10,
-          //         ),
-          //         Row(
-          //           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          //           children: [
-          //             iconNavBar('assets/icons/goride.png', 'GoRide'),
-          //             iconNavBar('assets/icons/gocar.png', 'GoCar'),
-          //             iconNavBar('assets/icons/gofood.png', 'GoFood'),
-          //             iconNavBar('assets/icons/gotix.png', 'GoTix'),
-          //           ],
-          //         )
-          //       ],
-          //     ),
-          //   ),
-          // )
         ],
       ),
     );
   }
 
-  Widget promoGoClub() {
+  Widget promoUnivrab() {
     return listPromoBanner(
       'assets/images/promo_banner_5.jpeg',
       'Klik buat gabung sekarang ',
@@ -95,7 +42,7 @@ class BerandaScreen extends StatelessWidget {
     );
   }
 
-  Widget promoGoFood() {
+  Widget promoUniv() {
     return Container(
       margin: EdgeInsets.only(
         left: 15,
@@ -340,7 +287,7 @@ class BerandaScreen extends StatelessWidget {
     );
   }
 
-  Widget goClubBanner() {
+  Widget UnivBanner() {
     return Container(
       margin: EdgeInsets.symmetric(
         horizontal: 15,
